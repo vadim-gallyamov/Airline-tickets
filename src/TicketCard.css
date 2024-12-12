@@ -1,0 +1,115 @@
+.ticket-card {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 600px;
+  height: 180px;
+  text-align: center;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.ticket-left {
+  margin: 0;
+  padding: 20px 0 0 20px;
+}
+
+.ticket-photo {
+  width: 170px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.tiket-right {
+  padding: 20px 20px 20px 20px;
+
+}
+
+.ticket-time {
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
+}
+
+.stop-span {
+  margin: 0 auto;
+  margin-top: 40px;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  opacity: 0.5;
+}
+
+.stop-span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 20px;
+  opacity: 0.5;
+}
+
+.stop-span::before {
+  content: '✈';
+  position: absolute;
+  left: 73px;
+  top: 12px;
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+
+.ticket-buy {
+  padding: 10px;
+  padding-bottom: 20px;
+  border-right: #ccc 1px solid;
+}
+
+.buy-button {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ED760E;
+  box-shadow: 0 2px hsl(215, 59%, 31%);
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.buy-button:hover {
+  background-color: #FFA000;
+}
+
+.buy-button:active {
+  background-color: #FFA420;
+}
+
+.ticket-cities {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ticket-date {
+  margin: 0;
+  margin-top: 5px;
+  opacity: 0.5;
+  font-size: 14px;
+}
